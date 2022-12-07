@@ -2,3 +2,9 @@
 @model RazorOduncTakip.Pages.OduncTakip.IndexModel
 @{
 }
+<ul>
+@foreach (var oi in Model.OduncIslemler)
+{
+    <li>@oi.Name  : @oi.DateGive - @oi.DateReturn</li>
+}
+</ul>
