@@ -2,3 +2,16 @@
 @model RazorOduncTakip.Pages.OduncTakip.CreateModel
 @{
 }
+<div class="container">
+    <form method="post">
+        <div class="">
+            <label asp-for="@Model.OduncIslem.Name"></label>
+            <input asp-for="@Model.OduncIslem.Name" />
+        </div>
+        <div class="">
+            <label asp-for="@Model.OduncIslem.DateGive"></label>
+            <input asp-for="@Model.OduncIslem.DateGive" />
+            <button type="submit">EKLE</button>
+        </div>
+    </form>
+</div>
