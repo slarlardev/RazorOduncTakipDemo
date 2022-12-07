@@ -1,7 +1,16 @@
+
+using Microsoft.EntityFrameworkCore;
+using RazorOduncTakip.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<OduncDbContext>(
+    options => options.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConn")
+        ));
+
 
 var app = builder.Build();
 
