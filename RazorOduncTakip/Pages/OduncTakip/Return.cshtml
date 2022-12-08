@@ -2,3 +2,28 @@
 @model RazorOduncTakip.Pages.OduncTakip.ReturnModel
 @{
 }
+
+<div class="container">
+    <div class="w-25">
+        <form method="post">
+            <input hidden asp-for="@Model.OduncIslem.Id" />
+            <div class="my-2">
+                <label class="form-label" asp-for="@Model.OduncIslem.Name"></label>
+                <input readonly class="form-control" asp-for="@Model.OduncIslem.Name"/>
+            </div>
+            <div class="">
+                <label class="form-label" asp-for="@Model.OduncIslem.DateGive"></label>
+                <input readonly class="form-control" asp-for="@Model.OduncIslem.DateGive" value="@DateTime.Today.ToString("yyyy-MM-dd")" />
+                
+                <label class="form-label" asp-for="@Model.OduncIslem.DateReturn"></label>
+                <input class="form-control" asp-for="@Model.OduncIslem.DateReturn" value="@DateTime.Today.ToString("yyyy-MM-dd")" />
+                
+                <div class="my-2 text-end">
+                <input class="btn btn-primary" type="submit" value="Return OK" />
+             </div>
+             <div class="container" asp-validation-summary="All">
+             </div>
+            </div>
+        </form>
+    </div>
+</div>
