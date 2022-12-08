@@ -17,6 +17,6 @@ namespace RazorOduncTakip.Model
         public DateTime DateGive { get; set; }
         
         [DataType(DataType.Date)]
-        public DateTime DateReturn { get; set; }
+        public DateTime? DateReturn { get; set; }
     }
 }

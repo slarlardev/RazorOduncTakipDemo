@@ -33,7 +33,7 @@ namespace RazorOduncTakip.Migrations
                     b.Property<DateTime>("DateGive")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DateReturn")
+                    b.Property<DateTime?>("DateReturn")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")

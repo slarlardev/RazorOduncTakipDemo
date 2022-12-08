@@ -12,8 +12,8 @@ using RazorOduncTakip.Data;
 namespace RazorOduncTakip.Migrations
 {
     [DbContext(typeof(OduncDbContext))]
-    [Migration("20221207111441_ilk")]
-    partial class ilk
+    [Migration("20221208075842_tekrar-ilk")]
+    partial class tekrarilk
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -35,7 +35,7 @@ namespace RazorOduncTakip.Migrations
                     b.Property<DateTime>("DateGive")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DateReturn")
+                    b.Property<DateTime?>("DateReturn")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")

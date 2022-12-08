@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace RazorOduncTakip.Migrations
 {
-    public partial class ilk : Migration
+    public partial class tekrarilk : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -17,7 +17,7 @@ namespace RazorOduncTakip.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DateGive = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    DateReturn = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    DateReturn = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
