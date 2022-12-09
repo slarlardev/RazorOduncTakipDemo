@@ -13,7 +13,7 @@
             </div>
             <div class="">
                 <label class="form-label" asp-for="@Model.OduncIslem.DateGive"></label>
-                <input readonly class="form-control" asp-for="@Model.OduncIslem.DateGive" value="@DateTime.Today.ToString("yyyy-MM-dd")" />
+                <input readonly class="form-control" asp-for="@Model.OduncIslem.DateGive" />
                 
                 <label class="form-label" asp-for="@Model.OduncIslem.DateReturn"></label>
                 <input class="form-control" asp-for="@Model.OduncIslem.DateReturn" value="@DateTime.Today.ToString("yyyy-MM-dd")" />
